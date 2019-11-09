@@ -1,6 +1,0 @@
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\bin\Debug\Dominio.dll
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\bin\Debug\Dominio.pdb
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\obj\Debug\Dominio.dll
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\obj\Debug\Dominio.pdb
-D:\git\curso-mvcnet\02. Aplicacion\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache

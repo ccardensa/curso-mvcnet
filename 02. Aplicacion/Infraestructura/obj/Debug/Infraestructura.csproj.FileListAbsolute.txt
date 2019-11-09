@@ -1,6 +1,0 @@
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\bin\Debug\Infraestructura.dll
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\bin\Debug\Infraestructura.pdb
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\obj\Debug\Infraestructura.csproj.CoreCompileInputs.cache
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\obj\Debug\Infraestructura.dll
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\obj\Debug\Infraestructura.pdb
-D:\git\curso-mvcnet\02. Aplicacion\Infraestructura\obj\Debug\Infraestructura.csprojAssemblyReference.cache

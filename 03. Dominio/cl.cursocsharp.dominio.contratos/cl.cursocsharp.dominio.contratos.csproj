@@ -41,9 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="ejemplo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\04. Infraestructura\cl.cursocsharp.infra.datos\cl.cursocsharp.infra.datos.csproj">
+      <Project>{51AAA0F7-0278-4FE0-B874-507437D863BA}</Project>
+      <Name>cl.cursocsharp.infra.datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\cl.cursocsharp.dominio.entidades\cl.cursocsharp.dominio.entidades.csproj">
+      <Project>{298BCD05-DEA2-4546-9FD4-01952A336370}</Project>
+      <Name>cl.cursocsharp.dominio.entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

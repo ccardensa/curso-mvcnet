@@ -1,0 +1,17 @@
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\obj\Debug\cl.cursocsharp.dominio.csproj.CoreCompileInputs.cache
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.dominio.dll.config
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.dominio.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.dominio.pdb
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.dominio.entidades.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.infra.datos.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\EntityFramework.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\EntityFramework.SqlServer.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.infra.datos.pdb
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.infra.datos.dll.config
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\cl.cursocsharp.dominio.entidades.pdb
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\EntityFramework.xml
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\bin\Debug\EntityFramework.SqlServer.xml
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\obj\Debug\cl.cursocsharp.dominio.csprojAssemblyReference.cache
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\obj\Debug\cl.cursocsharp.dominio.csproj.CopyComplete
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\obj\Debug\cl.cursocsharp.dominio.dll
+D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.base\obj\Debug\cl.cursocsharp.dominio.pdb

@@ -40,11 +40,13 @@ namespace PrimeraClase.Filtros
 
             bool isHabilitado = Convert.ToBoolean(ConfigurationManager.AppSettings["LogHabilitado"], CultureInfo.CurrentCulture);
 
+#if DEBUG
             if (isHabilitado)
             {
-                
+
             }
-          
+#endif
+
         }
 
 

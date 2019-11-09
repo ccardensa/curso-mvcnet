@@ -30,7 +30,7 @@ namespace cl.cursocsharp.dominio
         {
             using (var db = new Entities())
             {                
-                db.Set<T>().Add(entidad);
+                //db.Set<T>().Add(entidad);
                 db.SaveChanges();
             }
         }

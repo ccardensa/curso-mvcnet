@@ -1,2 +1,0 @@
-D:\git\curso-mvcnet\01. Presentacion\Proyecto Final\obj\Debug\Proyecto Final.csprojAssemblyReference.cache
-D:\git\curso-mvcnet\01. Presentacion\Proyecto Final\obj\Debug\Proyecto Final.csproj.CoreCompileInputs.cache

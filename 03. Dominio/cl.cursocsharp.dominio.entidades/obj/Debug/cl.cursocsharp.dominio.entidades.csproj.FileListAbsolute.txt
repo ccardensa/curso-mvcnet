@@ -1,5 +1,0 @@
-D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.entidades\bin\Debug\cl.cursocsharp.dominio.entidades.dll
-D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.entidades\bin\Debug\cl.cursocsharp.dominio.entidades.pdb
-D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.entidades\obj\Debug\cl.cursocsharp.dominio.entidades.csproj.CoreCompileInputs.cache
-D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.entidades\obj\Debug\cl.cursocsharp.dominio.entidades.dll
-D:\git\curso-mvcnet\03. Dominio\cl.cursocsharp.dominio.entidades\obj\Debug\cl.cursocsharp.dominio.entidades.pdb

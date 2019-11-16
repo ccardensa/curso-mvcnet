@@ -14,11 +14,9 @@ namespace cl.cursocsharp.dominio
         public void TestDb()
         {           
             using (var db = new Entities())
-            {
-                
+            {                
                 var dummyFactura = new Factura();
-                dummyFactura.Numero = "200";
-                //forma 1
+                dummyFactura.Numero = "200";                
                 db.Facturas.Add(dummyFactura);
                 
                 db.SaveChanges();

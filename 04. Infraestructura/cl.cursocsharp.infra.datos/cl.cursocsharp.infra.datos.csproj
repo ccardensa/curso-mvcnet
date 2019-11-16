@@ -61,6 +61,8 @@
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\Repository.cs" />
+    <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="Model.edmx">
@@ -86,6 +88,10 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\03. Dominio\cl.cursocsharp.dominio.contratos\cl.cursocsharp.dominio.contratos.csproj">
+      <Project>{a3cd2766-2a0a-4dab-933f-800258dd01d8}</Project>
+      <Name>cl.cursocsharp.dominio.contratos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\03. Dominio\cl.cursocsharp.dominio.entidades\cl.cursocsharp.dominio.entidades.csproj">
       <Project>{298BCD05-DEA2-4546-9FD4-01952A336370}</Project>
       <Name>cl.cursocsharp.dominio.entidades</Name>

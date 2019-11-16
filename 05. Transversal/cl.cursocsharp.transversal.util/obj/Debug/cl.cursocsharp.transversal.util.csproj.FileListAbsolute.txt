@@ -3,4 +3,3 @@ D:\git\curso-mvcnet\05. Transversal\cl.cursocsharp.transversal.util\bin\Debug\cl
 D:\git\curso-mvcnet\05. Transversal\cl.cursocsharp.transversal.util\obj\Debug\cl.cursocsharp.transversal.util.csproj.CoreCompileInputs.cache
 D:\git\curso-mvcnet\05. Transversal\cl.cursocsharp.transversal.util\obj\Debug\cl.cursocsharp.transversal.util.dll
 D:\git\curso-mvcnet\05. Transversal\cl.cursocsharp.transversal.util\obj\Debug\cl.cursocsharp.transversal.util.pdb
-D:\git\curso-mvcnet\05. Transversal\cl.cursocsharp.transversal.util\obj\Debug\cl.cursocsharp.transversal.util.csprojAssemblyReference.cache

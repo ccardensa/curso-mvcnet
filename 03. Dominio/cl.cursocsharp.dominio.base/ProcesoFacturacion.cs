@@ -16,7 +16,20 @@ namespace cl.cursocsharp.dominio
             this._repoFactura = _repoFactura;
         }
 
-        public void GuardarFactura()
+        public bool ActualizarFactura(Factura entity)
+        {
+            
+            _repoFactura.Add(entity);
+            return _repoFactura.UnitOfWork.SaveChanges();
+            
+        }
+
+        public Factura BuscarFactura(int id)
+        {
+            return _repoFactura.Get(x => x.IdFactura == id).FirstOrDefault();            
+        }
+
+        public void CrearFactura()
         {
             var dummyFactura = new Factura();
             dummyFactura.Numero = "200";
@@ -24,6 +37,13 @@ namespace cl.cursocsharp.dominio
             this._repoFactura.Add(dummyFactura);
             this._repoFactura.UnitOfWork.SaveChanges();
             var id = dummyFactura.IdFactura;
+        }
+
+        public void EliminarFactura(Factura entity)
+        {
+            var entidad = BuscarFactura(entity.IdFactura);
+            _repoFactura.Delete(entidad);
+            _repoFactura.UnitOfWork.SaveChanges();
         }
     }
 }

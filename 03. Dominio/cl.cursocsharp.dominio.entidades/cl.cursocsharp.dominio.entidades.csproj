@@ -44,6 +44,9 @@
     <Compile Include="Cliente.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Detalle.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Factura.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>

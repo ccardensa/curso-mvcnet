@@ -29,7 +29,7 @@ namespace cl.cursocsharp.dominio
         public void CrearFactura()
         {
             var dummyFactura = new Factura();
-            dummyFactura.Numero = "200";
+            dummyFactura.Numero = new Random(29).Next(3433).ToString();
             dummyFactura.FechaEmision = DateTime.Now.ToShortDateString();
             this._repoFactura.Add(dummyFactura);
             this._repoFactura.UnitOfWork.SaveChanges();

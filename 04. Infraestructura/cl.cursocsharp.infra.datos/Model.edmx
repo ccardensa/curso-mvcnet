@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Cliente">
           <Key>
             <PropertyRef Name="IdCliente" />
@@ -15,6 +15,16 @@
           <Property Name="Email" Type="varchar" MaxLength="100" />
           <Property Name="Telefono" Type="varchar" MaxLength="50" />
           <Property Name="IsActive" Type="bit" />
+        </EntityType>
+        <EntityType Name="Detalle">
+          <Key>
+            <PropertyRef Name="IdDetalle" />
+          </Key>
+          <Property Name="IdDetalle" Type="int" Nullable="false" />
+          <Property Name="IdFactura" Type="int" />
+          <Property Name="IdArticulo" Type="int" />
+          <Property Name="Cantidad" Type="int" />
+          <Property Name="Precio" Type="float" />
         </EntityType>
         <EntityType Name="Factura">
           <Key>
@@ -35,11 +45,11 @@
         </EntityType>
         <EntityContainer Name="ModelStoreContainer">
           <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Detalle" EntityType="Self.Detalle" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Factura" EntityType="Self.Factura" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Productos" EntityType="Self.Productos" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -75,7 +85,18 @@
           <EntitySet Name="Clientes" EntityType="Self.Cliente" />
           <EntitySet Name="Facturas" EntityType="Self.Factura" />
           <EntitySet Name="Productos" EntityType="Self.Producto" />
+          <EntitySet Name="Detalles" EntityType="Model.Detalle" />
         </EntityContainer>
+        <EntityType Name="Detalle">
+          <Key>
+            <PropertyRef Name="IdDetalle" />
+          </Key>
+          <Property Name="IdDetalle" Type="Int32" Nullable="false" />
+          <Property Name="IdFactura" Type="Int32" />
+          <Property Name="IdArticulo" Type="Int32" />
+          <Property Name="Cantidad" Type="Int32" />
+          <Property Name="Precio" Type="Double" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -110,6 +131,17 @@
                 <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Detalles">
+            <EntityTypeMapping TypeName="Model.Detalle">
+              <MappingFragment StoreEntitySet="Detalle">
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+                <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+                <ScalarProperty Name="IdArticulo" ColumnName="IdArticulo" />
+                <ScalarProperty Name="IdFactura" ColumnName="IdFactura" />
+                <ScalarProperty Name="IdDetalle" ColumnName="IdDetalle" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

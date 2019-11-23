@@ -1,4 +1,5 @@
 ﻿using cl.cursocsharp.dominio.contratos;
+using ProyectoFinal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,9 @@ namespace ProyectoFinal.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var model = new FacturaDto();
+            return View("Index", model);
+            //return View();
         }
 
         [HttpGet]

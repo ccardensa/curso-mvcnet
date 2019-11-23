@@ -7,9 +7,7 @@ namespace ProyectoFinal.Models
 {
     public class FacturaDto
     {
-        public int IdFactura { get; set; }
-        public int IdCliente { get; set; }
-        public int NumeroFactura { get; set; }
-        public DateTime Fecha { get; set; }
+        public CabeceraDto CabeceraDto { get; set; }
+        public DetalleDto DetalleDto { get; set; }
     }
 }

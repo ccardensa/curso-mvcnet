@@ -9,10 +9,13 @@
 
     @if (Model != null)
     {
+
         <div class="container">
             <h2>Creación Factura</h2>
-            @Html.BeginForm("ProcesoFact", "GenerarFactura", FormMethod.Post){
-
+           
+            @Html.BeginForm("ProcesoFact", "GenerarFactura", FormMethod.Post)
+            {
+                
             <input type="submit" />
             }
         </div>

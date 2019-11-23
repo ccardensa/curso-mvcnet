@@ -20,7 +20,7 @@ namespace ProyectoFinal.Controllers
 
         public ActionResult Index()
         {
-            ProcesoFacturacion.GuardarFactura();
+            ProcesoFacturacion.CrearFactura();
             
             return View();
         }

@@ -3,36 +3,56 @@
 
 @{
 
-    Layout = null;
+    //Layout = null;
     ViewBag.Title = "Creación Factura";
 }
 
 @if (Model != null)
 {
 
-    <div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>@ViewBag.Title</h2>
 
-        <div class="row">
-            <div class="col">
-                <h2>@ViewBag.Title</h2>
+            @Html.ValidationSummary();
+            @using (Html.BeginForm("GenerarFactura", "ProcesoFact", FormMethod.Post))
+            {
+                <div class="form-group">
 
-                @using (Html.BeginForm("ProcesoFact", "GenerarFactura", FormMethod.Post))
-                {
-                <input type="submit" />
-                }
+                    <fieldset>
+                        <legend>Datos Cliente</legend>
+                        @Html.Label("Número Factura")
+                        @Html.TextBoxFor(x => x.CabeceraDto.NumeroFactura, new { @class = "form-control" })
+                        <label>Cliente</label>
+                        @Html.TextBoxFor(x => x.CabeceraDto.IdCliente, new { @class = "form-control" })
+                        <label>Email</label>
+                        @Html.TextBoxFor(x => x.CabeceraDto.Email, new { @class = "form-control" })
+                    </fieldset>
+                    <fieldset>
+                        <legend>Productos</legend>
+                        @Html.LabelFor(x => x.DetalleDto.Cantidad)
+                        @Html.TextBoxFor(x => x.DetalleDto.Cantidad, new { @class = "form-control" })
+                        <label>Precio</label>
+                        @Html.TextBoxFor(x => x.DetalleDto.Precio, new { @class = "form-control" })
+                    </fieldset>
 
-            </div>
-            
+
+                    <input type="submit" />
+
+
+                </div>
+            }
             <div class="row">
                 <div class="col">
-                   footer
+                    footer
                 </div>
-               
+
             </div>
         </div>
-            
+
 
     </div>
+
 
 }
 else

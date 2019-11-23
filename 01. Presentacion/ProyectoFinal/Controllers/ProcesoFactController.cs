@@ -23,7 +23,9 @@ namespace ProyectoFinal.Controllers
         public ActionResult Index()
         {
             var model = new FacturaDto();
-            return View("Index", model);
+            model.CabeceraDto = new CabeceraDto();
+            model.DetalleDto = new DetalleDto();
+            return View("EjemploScaffolding", model.CabeceraDto);
             //return View();
         }
 
@@ -34,16 +36,27 @@ namespace ProyectoFinal.Controllers
         }
 
         [HttpPost]
-        public ActionResult GenerarFactura()
+        public ActionResult GenerarFactura(FacturaDto model)
         {
-            ProcesoFacturacion.CrearFactura();
-            return View();
+            if (ModelState.IsValid)
+            {
+
+            }
+            
+            //ProcesoFacturacion.CrearFactura();
+            return View("Index", model);
         }
 
         [HttpDelete]
         public ActionResult EliminarFactura()
         {
             return View();
+        }
+
+        [HttpGet]
+        public PartialViewResult Footer()
+        {
+            return PartialView("Footer");
         }
 
     }

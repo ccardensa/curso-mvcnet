@@ -97,3 +97,5 @@ D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\cl.cursocsharp.dominio.dl
 D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\cl.cursocsharp.dominio.entidades.pdb
 D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\cl.cursocsharp.infra.datos.pdb
 D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\cl.cursocsharp.infra.datos.dll.config
+D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\EntityFramework.SqlServer.dll
+D:\git\curso-mvcnet\01. Presentacion\ProyectoFinal\bin\EntityFramework.SqlServer.xml

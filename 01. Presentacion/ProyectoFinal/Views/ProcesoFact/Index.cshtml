@@ -1,23 +1,40 @@
 ﻿@using ProyectoFinal.Models;
 @model FacturaDto
 
-    @{
+@{
 
-        Layout = null;
-        ViewBag.Title = "Index";
-    }
+    Layout = null;
+    ViewBag.Title = "Creación Factura";
+}
 
-    @if (Model != null)
-    {
+@if (Model != null)
+{
 
-        <div class="container">
-            <h2>Creación Factura</h2>
-           
-            @Html.BeginForm("ProcesoFact", "GenerarFactura", FormMethod.Post)
-            {
-                
-            <input type="submit" />
-            }
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <h2>@ViewBag.Title</h2>
+
+                @using (Html.BeginForm("ProcesoFact", "GenerarFactura", FormMethod.Post))
+                {
+                <input type="submit" />
+                }
+
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                   footer
+                </div>
+               
+            </div>
         </div>
+            
 
-    }else { @Html.Raw("EL modelo no fue instanciado"); }
+    </div>
+
+}
+else
+{ @Html.Raw("EL modelo no fue instanciado");
+}

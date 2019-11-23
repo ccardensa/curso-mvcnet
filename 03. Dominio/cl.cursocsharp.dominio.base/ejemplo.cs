@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using cl.cursocsharp.dominio.contratos;
 
 namespace cl.cursocsharp.dominio
 {
-    public class ejemplo
+    public class ejemplo : IEjemplo
     {
+
         public void TestDb()
         {           
             using (var db = new Entities())

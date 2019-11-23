@@ -13,7 +13,11 @@ namespace ConsolaTest
         {
             var hola = new ejemplo();
             hola.TestDb();
-            
+
+            //var proceso = new ProcesoFacturacion();
+
+
+
         }
     }
 }

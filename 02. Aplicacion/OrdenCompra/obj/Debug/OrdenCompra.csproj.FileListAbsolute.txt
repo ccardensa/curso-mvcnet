@@ -75,8 +75,8 @@ D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\bin\System.Web.WebPages.Deploymen
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\bin\System.Web.WebPages.Razor.xml
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\bin\Antlr3.Runtime.pdb
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.csprojAssemblyReference.cache
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.csproj.CoreCompileInputs.cache
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.csproj.CopyComplete
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.dll
 D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.pdb
-D:\git\curso-mvcnet\02. Aplicacion\OrdenCompra\obj\Debug\OrdenCompra.csprojAssemblyReference.cache

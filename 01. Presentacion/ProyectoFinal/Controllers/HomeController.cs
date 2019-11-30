@@ -9,8 +9,11 @@ namespace ProyectoFinal.Controllers
 {
     public class HomeController : Controller
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         readonly IProcesoFacturacion ProcesoFacturacion;
         private IEjemplo Ejemplo;
+
         public HomeController(IProcesoFacturacion ProcesoFacturacion, IEjemplo Ejemplo
             )
         {
@@ -20,8 +23,7 @@ namespace ProyectoFinal.Controllers
 
         public ActionResult Index()
         {
-            ProcesoFacturacion.CrearFactura();
-            
+                             
             return View();
         }
 
@@ -35,6 +37,22 @@ namespace ProyectoFinal.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        //comment: https://stackify.com/log4net-guide-dotnet-logging/
+        public ActionResult Log()
+        {
+            try
+            {
+                int suma = 0;
+                var total = 1 / suma;               
+            }
+            catch (Exception ex)
+            {
+                log.Fatal("ERRORRRR FATAAAALLL CORRRAAAAANNN!");                
+            }
 
             return View();
         }

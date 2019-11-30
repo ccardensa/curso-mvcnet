@@ -30,9 +30,9 @@ namespace ProyectoFinal.Controllers
         }
 
         [HttpGet]
-        public ActionResult ObtenerFactura(int id)
-        {
-            return View();
+        public ActionResult Editar(int id)
+        {           
+            return RedirectToAction("About", "Home");
         }
 
         [HttpPost]
